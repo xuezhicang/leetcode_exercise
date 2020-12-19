@@ -1,3 +1,6 @@
+//solve this problem by using the HashTable
+
+
 import java.util.HashMap; 
 
 
