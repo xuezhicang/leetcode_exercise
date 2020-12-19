@@ -1,28 +1,17 @@
-import java.util.HashMap;
+import java.util.HashMap; 
+
+
 class Solution {
-    public static void main(String[] args) {
-
-        //input values
-        int[] input =  new int[]{2,7,11,15};
-        int target = 9;
-        //run the function
-        int[] results = Solution.twoSum(input,target);
-
-        //show the results        
-        System.out.println(java.util.Arrays.toString(results));
-
-    }
-
-
-
-    public static int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         HashMap <Integer, Integer> map 
-            = new HashMap<Integer, Integer>();
-        int complement;
-        //loop to check every element in the array
+            = new HashMap<Integer, Integer>();   //define a hashmap
+        int complement; //record the differente between the target and the current value
+        
+		//loop to check every element in the nums array
         for (int i = 0; i<nums.length; i++) {
-            complement = target - nums[i];
-            //if we already have the complement in HashMap,
+            complement = target - nums[i]; //he differente between the target and the current value
+            
+			//if we already have the complement in HashMap,
             //return an array that contains indices of them.  
             if (map.containsKey(complement)) {
                 return new int[] {i, map.get(complement)};
@@ -38,4 +27,3 @@ class Solution {
         throw new IllegalArgumentException("No solution");
     }
 }
-
