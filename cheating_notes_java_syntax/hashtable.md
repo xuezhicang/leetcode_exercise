@@ -1,4 +1,4 @@
-# HashMap, HashSet,and HashTable
+# HashMap, HashSet ,and HashTable
 
 There are severl types of data structure about the HashMap. The common used types are HashMap and HashSet. The previous can hole two elements in a unit. One is the key; and second element is the value. The keys must be unique; and the values can be duplicated. The Hasset is a set to store the unique keys.
 
@@ -67,3 +67,27 @@ String returned_value = hash_map.remove("England");
  System.out.println("the deleted capital is: "+ returned_value);//the results is London 
 
 ```
+
+## HashSet
+
+### Crearing a new HashSet
+
+```Java
+
+// import the HashSet class
+
+import java.util.HashSet; 
+
+// HashSet<keyType> variableName = new HashSet<keyType, valueType>();
+
+HashSet<String> cars = new HashSet<String>();
+
+``` 
+
+### Adding new element to the HashSet
+
+
+### Finding elements in the HashSet
+
+
+### Deleting new element form the HashTable 
