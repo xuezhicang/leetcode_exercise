@@ -35,9 +35,6 @@ HashMap<String, String> capitalCities = new HashMap<String, String>();
 
 ``` 
 
-### Finding elements in the HashMap
-
-
 ### Adding new element to the HashMap
 
 ```java
@@ -48,4 +45,25 @@ capitalCities.put("England", "London");
 
 ```
 
+
+### Finding elements in the HashMap
+
+```java
+
+System.out.println("The Value is: " + capitalCities.get("England")); //the return is London
+
+System.out.println("Check whether a key is in the hashmap " + capitalCities.containsKey("England")); // the return is true
+
+System.out.println("Check whether a key is in the hashmap " + capitalCities.getOrDefault("b", "nonono")); // the return is 500, because the capitalCities hashmap doesnot have the string "b"
+
+```
+
 ### Deleting new element form the HashTable 
+
+```java
+
+String returned_value = hash_map.remove("England");
+
+ System.out.println("the deleted capital is: "+ returned_value);//the results is London 
+
+```
