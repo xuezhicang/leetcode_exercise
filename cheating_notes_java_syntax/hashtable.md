@@ -23,12 +23,15 @@ Based on the definition, the HashMap and HashTable are very similar. Both of the
 
 ### Crearing a new HashMap
 
-```ruby
+```Java
 
-import java.util.HashMap; // import the HashMap class
+// import the HashMap class
+
+import java.util.HashMap; 
+
+// HashMap<keyType, valueType> variableName = new HashMap<keyType, valueType>();
 
 HashMap<String, String> capitalCities = new HashMap<String, String>();
-
 
 ``` 
 
@@ -37,6 +40,12 @@ HashMap<String, String> capitalCities = new HashMap<String, String>();
 
 ### Adding new element to the HashMap
 
+```java
 
+// variableName.put(ketType,valueType)
+
+capitalCities.put("England", "London");
+
+```
 
 ### Deleting new element form the HashTable 
