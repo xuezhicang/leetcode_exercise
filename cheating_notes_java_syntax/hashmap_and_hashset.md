@@ -24,48 +24,46 @@ Based on the definition, the HashMap and HashTable are very similar. Both of the
 ### Crearing a new HashMap
 
 ```Java
-
 // import the HashMap class
-
 import java.util.HashMap; 
-
 // HashMap<keyType, valueType> variableName = new HashMap<keyType, valueType>();
-
 HashMap<String, String> capitalCities = new HashMap<String, String>();
-
 ``` 
 
 ### Adding new element to the HashMap
 
 ```java
-
-// variableName.put(ketType,valueType)
-
+// variableName.put(keyType,valueType)
 capitalCities.put("England", "London");
-
 ```
 
 
 ### Finding elements in the HashMap
 
 ```java
-
 System.out.println("The Value is: " + capitalCities.get("England")); //the return is London
-
 System.out.println("Check whether a key is in the hashmap " + capitalCities.containsKey("England")); // the return is true
-
-System.out.println("Check whether a key is in the hashmap " + capitalCities.getOrDefault("b", "nonono")); // the return is 500, because the capitalCities hashmap doesnot have the string "b"
-
+System.out.println("Check whether a key is in the hashmap " + capitalCities.getOrDefault("b", 500)); // the return is 500, because the capitalCities hashmap doesnot have the string "b"
 ```
 
 ### Deleting new element form the HashTable 
 
 ```java
+String returned_value = capitalCities.remove("England");
+System.out.println("the deleted capital is: "+ returned_value);//the results is London 
+```
 
-String returned_value = hash_map.remove("England");
-
- System.out.println("the deleted capital is: "+ returned_value);//the results is London 
-
+### Traverse through a HashMap
+```java
+//Map.Entry<keyType,valueType>
+for (Map.Entry<String,String> tempNode : capitalCities.entrySet()) 
+{
+    if (tempNode.getValue().equals("London")) 
+    {
+        //the return value is England
+        return tempNode.getKey();
+    }
+}
 ```
 
 ## HashSet
