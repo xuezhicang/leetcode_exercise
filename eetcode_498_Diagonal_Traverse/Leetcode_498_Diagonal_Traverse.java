@@ -4,7 +4,7 @@ class Solution {
         
         
 
-        if(matrix == null || matrix.length == 0)
+        if(matrix == null  || matrix.length == 0)
         {
             //System.out.println("wrong input");
             return new int[0];
