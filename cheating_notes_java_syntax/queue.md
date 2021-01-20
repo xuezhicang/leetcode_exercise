@@ -10,7 +10,7 @@ Queue<Integer> q = new LinkedList<Integer>();
 //add one element to the queue 
 q.add(a);
 //add the whole Collection to the queue
-q.add(list);
+q.addall(list);
 ```
 ## To remove the head of queue.
 ```java
