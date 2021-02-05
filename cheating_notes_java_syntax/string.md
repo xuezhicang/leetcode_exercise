@@ -13,3 +13,10 @@ System.out.println(s1.equals(s2));
 //false
 //true
 ```
+
+## split string
+
+```java
+//split the path string
+String[] components = path.split("/");
+```

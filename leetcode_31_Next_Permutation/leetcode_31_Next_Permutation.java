@@ -20,10 +20,7 @@ class Solution {
                 break;
             }
         }
-        
-        
-        
-        //inverse array
+
         Arrays.sort(nums,i,nums.length);
 
         
