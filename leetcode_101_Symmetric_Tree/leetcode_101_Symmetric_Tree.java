@@ -9,13 +9,8 @@ class Solution {
     } 
 
     
-    public boolean isSymmetric(TreeNode root) {
-        
-      
+    public boolean isSymmetric(TreeNode root) {       
         return helper(root,root);
-        
-
-        
-        
+   
     }
 }
