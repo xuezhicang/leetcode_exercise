@@ -9,8 +9,7 @@ class Solution {
             res = Math.min(res,minDepth(root.left)+1);
         if(root.right != null)
             res = Math.min(res,minDepth(root.right)+1);
-        
-        
+          
         return res;
         
     }
