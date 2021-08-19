@@ -6,19 +6,10 @@ class Solution {
         if(res.size() <= level)
             res.add(new ArrayList<Integer>());
         res.get(level).add(root.val);        
-            
-
         helper(root.left,res,level+1);
         helper(root.right,res,level+1);
-        
-
-            
-        
-
         return;
-        
-        
-        
+ 
     }
     
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
