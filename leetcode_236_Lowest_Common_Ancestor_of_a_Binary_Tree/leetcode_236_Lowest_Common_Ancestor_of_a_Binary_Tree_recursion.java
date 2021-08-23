@@ -7,14 +7,12 @@ class Solution {
         if(root == null) return false;
         
         int left = helper(root.left, p, q)?1:0;
-        int right = helper(root.right, p, q)?1:0;
-        
-        int mid= (root.val ==p.val ||root.val==q.val)?1:0;
+        int right = helper(root.right, p, q)?1:0;       
+        int mid= (root.val ==p.val ||root.val==q.val)?1:0;      
         
         if(left+right+mid>=2)
             res = root;
-        
-            
+    
         return (left+right+mid>0);
     }
     
