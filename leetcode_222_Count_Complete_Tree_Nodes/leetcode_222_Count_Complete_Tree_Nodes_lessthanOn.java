@@ -1,10 +1,8 @@
-
 class Solution {
     
     public int findDepth(TreeNode root){
         if (root ==  null) return 0;
-        return findDepth(root.left) +1;
-        
+        return findDepth(root.left) +1;    
     }
     
     public boolean findNode(TreeNode node,int depth, int idx){
@@ -21,12 +19,9 @@ class Solution {
             }
             else{
                 node = node.left;
-                right = mid-1;
-                
+                right = mid-1;          
             }
-            
-          
-            
+
         }
         
         return (node != null)  ;  
@@ -48,7 +43,6 @@ class Solution {
                 right = mid -1;
 
         }
-        
         return (int)Math.pow(2,depth-1)-1 + left;
         
     }
